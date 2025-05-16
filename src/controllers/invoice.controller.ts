@@ -7,6 +7,7 @@ export default {
       const { customer_name } = req.body
       const today = new Date().toISOString().split('T')[0].replace(/-/g, '')
 
+      // lock row, using db.tx for transaction BEGIN, COMMIT/ROLLBACK
       const result = await db.tx(async tx => {
         const counter = await tx.oneOrNone(
           `SELECT * FROM invoice_counters WHERE invoice_date = $1 FOR UPDATE`,

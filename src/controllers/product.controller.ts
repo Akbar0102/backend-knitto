@@ -24,6 +24,7 @@ export default {
       }
     }
   },
+  // scheduler restock
   async restockAllProducts(): Promise<void> {
     try {
       const result = await db.result(`

@@ -6,6 +6,8 @@ export default {
     try {
       const { customer_id, items } = req.body
 
+      // transaction using tx: for BEGIN, COMMIT/ROLLBACK
+      // run multiple query
       const result = await db.tx(async (tx) => {
         let totalAmount = 0
 
