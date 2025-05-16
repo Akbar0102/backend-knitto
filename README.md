@@ -4,7 +4,7 @@
 
 Repository ini berisi hasil pengerjaan **Backend Skill Test** untuk Knitto Group. Proyek ini dibuat menggunakan TypeScript dan PostgreSQL sebagai database.
 
-Node.js  22.13.1 
+Node.js 22.13.1
 
 ## Struktur Proyek
 
@@ -14,6 +14,8 @@ Node.js  22.13.1
     - auth.controller.ts
     - invoice.controller.ts
     - order.controller.ts
+    - product.controller.ts
+    - shipping.controller.ts
   - routes/
     - api.ts
   - helper/
